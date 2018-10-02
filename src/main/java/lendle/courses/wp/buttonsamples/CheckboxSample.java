@@ -30,11 +30,19 @@ public class CheckboxSample {
         JCheckBox check1 = new JCheckBox("check1");
         
         JCheckBox check2 = new JCheckBox("check2");
+        frame.add(check1);
+        frame.add(check2);
         
         //1. 在 frame 裡面 add check1 check2
         //2. 在 check1 check2 加入 ActionActionListener
         //3. 裡面執行JOptionPane.showMessageDialog(null, "check1=" + check1.isSelected() + ",check2=" + check2.isSelected());
-
+        ActionListener listener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            String str = "check1="+ check1.isSelected()+", check2 ="+ check2.isSelected();
+            JOptionPane.showMessageDialog(null, str);
+            }
+        };
         ////////////////////////////////////////
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setVisible(true);

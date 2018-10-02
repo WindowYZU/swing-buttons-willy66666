@@ -18,7 +18,7 @@ public class SampleActionListener implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("clicked!"); //To change body of generated methods, choose Tools | Templates.
-        JOptionPane.showMessageDialog(null ,"Hello world");
+        
     }
     //1. override ActionListener
     //2. 裡面寫 System.out.println("clicked
