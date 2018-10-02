@@ -5,6 +5,7 @@
  */
 package lendle.courses.wp.buttonsamples;
 
+import com.sun.javafx.geom.AreaOp;
 import java.awt.FlowLayout;
 import java.awt.Image;
 import java.net.URL;
@@ -31,6 +32,8 @@ public class ActionListenerSample1 {
         
         JButton button=new JButton("click");
         //利用 addActionListener 將 SampleActionListener 設定給 button
+        SampleActionListener l = new SampleActionListener();
+        button.addActionListener(l);
         
         //////////////////////////////////////////////////////
         frame.add(button);

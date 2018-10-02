@@ -5,13 +5,22 @@
  */
 package lendle.courses.wp.buttonsamples;
 
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author lendle
  */
 public class SampleActionListener implements ActionListener{
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("clicked!"); //To change body of generated methods, choose Tools | Templates.
+        JOptionPane.showMessageDialog(null ,"Hello world");
+    }
     //1. override ActionListener
-    //2. 裡面寫 System.out.println("clicked!");
+    //2. 裡面寫 System.out.println("clicked
+   
 }
